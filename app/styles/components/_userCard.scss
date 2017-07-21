@@ -1,0 +1,28 @@
+.user-card {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $grey;
+  padding: 10px 0;
+  img {
+    border-radius: 50%;
+    border: 2px solid $grey;
+  }
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-left: 10px;
+    .fa-check-circle {
+      color: $twitterBlue;
+    }
+    span, b {
+      margin-bottom: 5px;
+    }
+    a {
+      color: $twitterBlue;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

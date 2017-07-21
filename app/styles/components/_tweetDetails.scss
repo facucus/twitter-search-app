@@ -1,0 +1,34 @@
+.tweet-details {
+    background-color: white;
+    padding: 20px 40px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-shadow: $shadow;
+    .tweet-date {
+      color: $grey;
+      font-size: 14px;
+    }
+    .tweet-text {
+      font-size: 22px;
+    }
+    .tweet-info {
+      align-self: flex-start;
+      font-size: 14px;
+      color: $grey;
+      span {
+        margin-right: 20px;
+      }
+    }
+}
+
+@media (max-width: 767px) {
+  .tweet-details {
+    padding: 20px;
+    .tweet-text {
+      margin: 15px 0;
+    }
+  }
+}

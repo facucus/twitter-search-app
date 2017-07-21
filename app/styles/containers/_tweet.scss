@@ -1,0 +1,35 @@
+.tweet {
+  padding: 40px;
+  .content {
+    display: flex;
+  }
+  .back-button {
+    display: flex;
+    a {
+      margin: 40px auto;
+      background: $twitterBlue;
+      color: white;
+      border: 1px solid $grey;
+      box-shadow: $shadow;
+      font-size: 14px;
+      padding: 10px 15px;
+      &:hover {
+        background: white;
+        color: $twitterBlue;
+        cursor: pointer;
+      }
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .tweet {
+    padding: 40px 0;
+    .content {
+      flex-direction: column;
+    }
+  }
+}

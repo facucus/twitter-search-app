@@ -1,0 +1,47 @@
+.search-form {
+  background-color: white;
+  padding: 50px 50px;
+  margin: 40px 0;
+  width: 60%;
+  box-shadow: $shadow;
+  form {
+    border: 1px solid $grey;
+    display: flex;
+    justify-content: flex-end;
+    input {
+      border: none;
+      flex-grow: 1;
+      padding: 10px 15px;
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      background: transparent;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .latest-searches {
+    margin-top: 30px;
+    margin-bottom: -20px;
+    display: flex;
+    .search-list {
+      margin-left: 10px;
+      .search {
+        color: $twitterBlue;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .search-form {
+    width: 100%;
+  }
+}

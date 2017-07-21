@@ -1,0 +1,51 @@
+.user-details {
+  flex:1;
+  margin-right: 40px;
+  padding-bottom: 20px;
+  background-color: white;
+  box-shadow: $shadow;
+  .user-bg {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    img {
+      min-width: 100%;
+      height: auto;
+    }
+  }
+  .user-profile {
+    text-align: center;
+    margin: 0 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $grey;
+    position: relative;
+    top: -26px;
+    img {
+      border-radius: 50%;
+      border: 3px solid $grey;
+      margin-bottom: 10px;
+    }
+    .user-name {
+      i {
+        margin: 0 5px;
+        color: $twitterBlue;
+      }
+    }
+    .user-description {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+  }
+  .account-info {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 767px) {
+  .user-details {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+}
